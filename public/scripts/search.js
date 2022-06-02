@@ -70,4 +70,20 @@ tagsArray = [
         name: "ayato",
         tags: ["Аято", "Ayato", "Камисато", "Kamisato"],
     },
+    {
+        name: "kazuha",
+        tags: ["Казуха", "Kazuha", "Кадзуха", "Казах"],
+    },
+    {
+        name: "jean",
+        tags: ["Джинн", "Jean"],
+    },
+    {
+        name: "yelan",
+        tags: ["Е Лань", "Yelan"],
+    },
+    {
+        name: "diona",
+        tags: ["Диона", "Diona"],
+    },
 ];
