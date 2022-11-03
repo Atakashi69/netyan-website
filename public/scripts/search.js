@@ -86,4 +86,8 @@ tagsArray = [
         name: "diona",
         tags: ["Диона", "Diona"],
     },
+    {
+        name: "nilou",
+        tags: ["Нилу", "Nilou"],
+    }
 ];
