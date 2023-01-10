@@ -96,10 +96,13 @@ setInterval(async () => {
     const users = await User.find({ activityMeter: { $gte: 1 } });
 
     for (let i = 0; i < users.length; i++) {
-        User.findOneAndUpdate(
-            { nickname: users[i].nickname },
-            { $inc: { activityMeter: -1, experience: Math.floor(Math.random() * 2 + 4) } }
-        ).exec();
+        if (users[i].activityMeter > 0)
+        {
+            User.findOneAndUpdate(
+                { nickname: users[i].nickname },
+                { $inc: { activityMeter: -1, experience: Math.floor(Math.random() * 2 + 4) } }
+            ).exec();
+        }
     }
 }, 60000);
 
